@@ -83,3 +83,7 @@ Das Plugin liegt danach unter `target/BedrockVoiceBridge-1.0.0.jar`. Es ist sehr
 * Es geht nur um **Gruppen**. Näherungs-Voice (Proximity) wird nicht übertragen.
 * Discord-Teilnehmer hören sich untereinander direkt über Discord. Das Plugin überträgt nur zwischen Discord und dem Spiel.
 * Die Latenz liegt bei etwa 100–200 ms.
+
+## Lizenz
+
+[MIT](LICENSE) – du darfst das Plugin frei nutzen, verändern und weitergeben, solange der Lizenzhinweis erhalten bleibt.
