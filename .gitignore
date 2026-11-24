@@ -1,0 +1,15 @@
+# Build-Ausgaben
+target/
+build.log
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Lokale Server-Configs mit echten Tokens niemals hochladen
+**/plugins/BedrockVoiceBridge/config.yml
+**/links.yml

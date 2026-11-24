@@ -1,0 +1,33 @@
+# ==========================================================
+#  BedrockVoiceBridge – Konfiguration
+# ==========================================================
+
+discord:
+  # ID deines Discord-Servers (Rechtsklick auf Server -> "Server-ID kopieren",
+  # Entwicklermodus in Discord muss an sein). In Anfuehrungszeichen lassen!
+  guild-id: "000000000000000000"
+
+  # Kategorie, in der die temporaeren Sprachkanaele erstellt werden ("0" = keine).
+  category-id: "0"
+
+  # Name der automatisch erstellten Sprachkanaele: <Praefix><Gruppenname>
+  channel-prefix: "MC-Gruppe: "
+
+  # Bot-Tokens. Ein Discord-Bot kann pro Server nur in EINEM Sprachkanal sein.
+  # Jeder Token = eine Gruppe, die gleichzeitig ueber Discord erreichbar ist.
+  # Der ERSTE Bot verwaltet ausserdem die Kanaele und den /link-Befehl
+  # und braucht deshalb die Berechtigung "Administrator".
+  bot-tokens:
+    - "HIER_DEN_BOT_TOKEN_EINTRAGEN"
+
+audio:
+  # Lautstaerke Discord -> Minecraft (1.0 = normal)
+  discord-to-minecraft-volume: 1.0
+  # Lautstaerke Minecraft -> Discord (1.0 = normal)
+  minecraft-to-discord-volume: 1.0
+
+# Wie lange ein Verknuepfungscode aus /dvc link gueltig ist (Minuten)
+link-code-minutes: 5
+
+# Wie lange eine Einladung (/dvc invite) fuer passwortgeschuetzte Gruppen gilt (Minuten)
+invite-minutes: 5

@@ -1,0 +1,30 @@
+name: BedrockVoiceBridge
+version: '${project.version}'
+main: de.bedrockvoice.BedrockVoiceBridgePlugin
+api-version: '1.21'
+description: Laesst Spieler ohne Voicechat-Mod (z.B. Bedrock ueber Geyser) per Discord einer Simple-Voice-Chat-Gruppe beitreten.
+depend: [voicechat]
+
+# Paper laedt diese Bibliotheken beim Start automatisch aus Maven Central.
+libraries:
+  - net.dv8tion:JDA:${jda.version}
+  - club.minnced:jdave-api:${jdave.version}
+  - club.minnced:jdave-native-linux-x86-64:${jdave.version}
+  - club.minnced:jdave-native-linux-aarch64:${jdave.version}
+  - club.minnced:jdave-native-win-x86-64:${jdave.version}
+  - club.minnced:jdave-native-darwin:${jdave.version}
+
+commands:
+  dvc:
+    description: Discord-Voice-Bruecke fuer Voicechat-Gruppen
+    usage: /dvc <link|unlink|groups|join|leave|invite>
+    aliases: [discordvoice]
+    permission: bedrockvoice.use
+
+permissions:
+  bedrockvoice.use:
+    description: Darf die Discord-Voice-Bruecke benutzen
+    default: true
+  bedrockvoice.bypasspassword:
+    description: Darf passwortgeschuetzten Gruppen ohne Einladung beitreten
+    default: op
